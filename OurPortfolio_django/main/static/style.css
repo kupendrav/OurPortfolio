@@ -30,4 +30,6 @@ body{
   border-radius: 3px;
   font-weight: 600;
   padding: 10px 10px;
+  cursor: pointer;
+  
 }
