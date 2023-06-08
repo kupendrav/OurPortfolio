@@ -10,10 +10,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  {% comment %} <img src="https://avatars.githubusercontent.com/u/79694828?v=4" height=100px width=95px class="profilePic"> {% endcomment %}
+
+
+  <img src="{{ user.profilePic.url}}" height=100px width=95px class="profilePic">
   <h1 class="name-h1">Hi I'm {{user.name}}</h1>
   <h1 class="job-h1">{{user.jobTitle}}</h1>
 
 <p class="short-des">{{user.shortDescription}}</p>
+
 
 <p></p>
 <a class="icons" href="https://linkedin.com/in/mohdfaizan5"><i class="fa-brands fa-linkedin fa-2xl"></i></a>

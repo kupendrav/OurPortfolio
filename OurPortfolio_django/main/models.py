@@ -8,6 +8,7 @@ class Portfolio(models.Model):
   name = models.CharField(max_length=100)
   jobTitle = models.CharField(max_length=50)
   shortDescription = models.CharField(max_length=300)
+  profilePic = models.ImageField(upload_to="images", null=True)
   # linkedIn = models.URLField(null=True)
   # github = models.URLField(null=True)
   # mail = models.EmailField(null=True)

@@ -43,3 +43,9 @@ body{
   padding: 10px 10px;  
 
 }
+
+
+.profilePic{
+  margin: 10px 20px;
+  border-radius: 10px;
+}
