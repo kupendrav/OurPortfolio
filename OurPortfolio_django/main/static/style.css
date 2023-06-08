@@ -30,6 +30,16 @@ body{
   border-radius: 3px;
   font-weight: 600;
   padding: 10px 10px;
-  cursor: pointer;
-  
+  margin: 20px 10px;
+}
+
+.icons{
+  margin-top: 50px;
+
+  /* height: 60px;
+  padding-top: 20px;
+  width: 10px;
+  size: 29px; */
+  padding: 10px 10px;  
+
 }
