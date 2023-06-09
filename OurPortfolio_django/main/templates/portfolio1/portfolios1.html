@@ -5,14 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faizan's Portfolio</title>
-  <link rel="stylesheet" href="static/style.css">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <h1 class="name-h1">Hi I'm Faizan</h1>
-  <h1 class="job-h1">Full-Stack Web Developer</h1>
+  {% comment %} <img src="https://avatars.githubusercontent.com/u/79694828?v=4" height=100px width=95px class="profilePic"> {% endcomment %}
 
-<p class="short-des">I am a Front-End / Full-Stack Developer.<br> I am currently as a Freelancer and Tutor</p>
+
+  <img src="{{ user.profilePic.url}}" height=100px width=95px class="profilePic">
+  <h1 class="name-h1">Hi I'm {{user.name}}</h1>
+  <h1 class="job-h1">{{user.jobTitle}}</h1>
+
+<p class="short-des">{{user.shortDescription}}</p>
+
 
 <p></p>
 <a class="icons" href="https://linkedin.com/in/mohdfaizan5"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
@@ -22,10 +28,6 @@
 
 <p>
 <button class="contact-btn">Contact Me</button>
-
-<i class="fa-solid fa-envelope fa-beat-fade fa-2xl" style="color: #551a8b;"></i>
-
-
 </p>
 </body>
 </html>
