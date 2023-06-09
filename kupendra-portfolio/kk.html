@@ -35,23 +35,35 @@
       list-style: none;
       margin: 0 25px;
     }
+    nav ul li a{
+       text-decoration: none;
+       color: whitesmoke;
+    }
+    nav ul li a:hover{
+      color: #7c3aed;
+      font-size: 1.05rem;
+        
+    }
     .left{
-      font-size: 2rem;
+       
       margin-top: 2rem;
+      margin-left: 2rem;
     }
     .firstsection{
       display: flex;
       justify-content: space-around;
-      margin: 100px 0;
+      align-items: center;
+      margin: 110px o;
 
     }
     .firstsection > div{
       width: 30%;
     }
     .leftsection {
+      
        
       font-size: 3rem;
-      margin: 30px 0;
+      
     }
     .rightsection{
       width: 80%;
@@ -59,9 +71,18 @@
     }
     .purple{
       color:  #7c3aed;
+      font-size: 500px;
 
     }
-    
+    #element{
+      color:  #7c3aed;
+    }
+    .secondsection{
+      max-width: 80vw;
+      margin: auto;
+      
+    }
+     
   </style>
  </head>
  <body>
@@ -70,11 +91,11 @@
       <div class="left"><img src= "images-removebg-preview.png" alt="" height="75px" width="75px" ></div>
       <div class="right">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Experince</li>
-          <li>Contact</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Experince</a></li>
+           <li><a href="/">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -86,13 +107,28 @@
         <img src="waving-hand.1da6fc7a.gif" alt="" height="75px" width="75px">
         hey!
        <div> I'm  <span class="purple">Kupendra </span></div>  
-       <div> I am into Frontend Development</div>
+       <div> I am into  </div>
+       <span id="element"></span>
       </div>
       <div class="rightsection">
         <img src="IMG_7025-removebg-preview.png" alt="" height="500px" width="750px">
       </div>
 
     </section>
+    <section class="secondsection">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a ut nostrum ullam, deleniti fuga amet ipsum laboriosam dignissimos.</p>
+    </section>
+  
   </main>
- </body>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+<script>
+  var typed = new Typed('#element', {
+    strings: ['Frontend Development', '  App Development','Marketing '],
+    typeSpeed: 90,
+  });
+</script> 
+ 
+
+</body>
  </html>
