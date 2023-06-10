@@ -1,19 +1,20 @@
+<!--Default Portfolio-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faizan's Portfolio</title>
+  <title>{{user.name}}'s Portfolio</title>
   {% load static %}
-  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="{% static 'portfolio1_static/style.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static '/favicon.png' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  {% comment %} <img src="https://avatars.githubusercontent.com/u/79694828?v=4" height=100px width=95px class="profilePic"> {% endcomment %}
 
-
-  <img src="{{ user.profilePic.url}}" height=100px width=95px class="profilePic">
+  <img src="{{ user.profilePic.url}}" height=100px width=100px class="profilePic">
   <h1 class="name-h1">Hi I'm {{user.name}}</h1>
   <h1 class="job-h1">{{user.jobTitle}}</h1>
 
@@ -21,7 +22,7 @@
 
 
 <p></p>
-<a class="icons" href="https://linkedin.com/in/mohdfaizan5"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+<a class="icons" href="{{user}}"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
 <a class="icons" href="https://github.com/mohdfaizan5"><i class="fa-brands fa-github fa-2xl"></i></a>
 <a class="icons" href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
 <a class="icons" href=""><i class="fa-solid fa-envelope fa-2xl" style="color: #551a8b;"></i></a>
