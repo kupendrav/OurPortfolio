@@ -19,3 +19,8 @@ This repo contains the startup OurPortfolio.live code:
   * Free tailwind css templates
 * https://bootswatch.com/
   * Free bootstrap templates   
+
+
+### tools:
+* Favicons generator(simple): https://favicon.io/favicon-generator/ 
+* Logo maker(simple): https://favicon.io/logo-generator/
