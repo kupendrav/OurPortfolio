@@ -14,3 +14,4 @@ This repo contains the startup OurPortfolio.live code:
 * Josefin Sans
 
 ## Preview:
+![preview1](https://github.com/muhammedtahir1/OurPortfolio/assets/130145083/c8b9f3e8-ea4e-40a8-8639-f8831b84c19b)
