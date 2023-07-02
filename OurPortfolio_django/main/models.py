@@ -16,11 +16,14 @@ class Portfolio(models.Model):
   # Properties
   user_name = models.CharField(max_length=100, unique=True, null=True)
   # Use first name and last
-  name = models.CharField(max_length=100)
+  first_name = models.CharField(max_length=50, null=True)
+  last_name = models.CharField(max_length=100, null=True)
 
   # ? Ask for alternative or better name for jobtitle
   jobTitle = models.CharField(max_length=50)
-  shortDescription = models.CharField(max_length=300)
+  shortDescription = models.TextField()
+  
+  # shortDescription = models.CharField(max_length=300)
   
 # Keeps im
   profilePic = models.ImageField(upload_to="images", null=True)
@@ -28,13 +31,13 @@ class Portfolio(models.Model):
 
   # SOCIALS
 
-  # twitter = 
-  # linkedIn = models.URLField(null=True)
-  # github = models.URLField(null=True)
-  # mail = models.EmailField(null=True)
-  # insta
-  
+  twitter = models.URLField(null=True, blank=True)
+  linkedIn = models.URLField(null=True, blank=True)
+  github = models.URLField(null=True)
+  mail = models.EmailField(null=True, blank=True)
+    
   # aboutMe = models.CharField(max_length=5000, null=True)
+  
   # skills = models.CharField(max_length=300, null=True)
     # what level of expertise 
   # contact me

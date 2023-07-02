@@ -1,4 +1,4 @@
-# OurPortfolio
+# OurPortfolio - backend
 
 This repo contains the startup OurPortfolio.live code:
 

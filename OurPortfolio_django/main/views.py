@@ -14,7 +14,11 @@ def index(request):
 #     })
 
 def portfolios_username(request, username):
-    user = Portfolio.objects.get(user_name=username)
+    try:
+        user = Portfolio.objects.get(user_name=username)
+    except:
+        print("something's not right")
+
     if user.porfolioTemplate == "BLUE":
         return render(request, "portfolio1/portfolio3.html", {
         "user": user

@@ -43,13 +43,26 @@
                     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">{{user.name}}</span><br> 
                         {{user.jobTitle }}</h1>
 
-                    <a href="#" class="button">Contact</a>
+                    <a href="mailto:{{user.mail}}" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
+
+                    {% if user.twitter %}
+                    <a href="{{user.twitter}}" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+                    {% endif %}
+
+                    {% if user.linkedin %}
                     <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    {% comment %} <a href="{{user.linkedin}}" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a> {% endcomment %}
+                    {% endif %}
+                    {% comment %} {% if user.github %}
+                    <a href="{{user.github}}" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    {% endif %} {% endcomment %}
+
+                    {% if user.github %}
+                    <a href="{{user.github}}" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    {% endif %}
                 </div>
 
                 <div class="home__img">
